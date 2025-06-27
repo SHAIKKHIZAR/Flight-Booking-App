@@ -1,0 +1,95 @@
+.user-bookingsPage {
+  margin: 13vh 0 0 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+
+  /* ✅ Background Image Setup */
+  background-image: url('../assets/pexels-francis-jay-garingo-57041805-8028839.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* ✅ Optional soft blur to enhance readability */
+  backdrop-filter: blur(1px);
+}
+
+.user-bookingsPage h1 {
+  color: #2a4e66;
+  margin-left: 5vw;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.user-bookings {
+  margin-top: 5vh;
+  width: 90%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 30px;
+}
+
+.user-booking {
+  background-color: rgba(255, 255, 255, 0.88); /* Slightly transparent white */
+  backdrop-filter: blur(3px); /* Subtle blur for legibility */
+  padding: 3vh 2vw;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border-left: 5px solid #2a4e66;
+}
+
+.user-booking:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 28px;
+  transform: translateY(-3px);
+}
+
+.user-booking span {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user-booking p {
+  margin: 0 0 5px;
+  color: #2e6887;
+  font-size: 0.95rem;
+}
+
+.user-booking p b {
+  font-weight: 600;
+}
+
+.user-booking ol {
+  margin: 5px 0 10px;
+  padding-left: 16px;
+  font-size: 0.88rem;
+  color: #345670;
+}
+
+.user-booking button {
+  margin-top: 15px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-booking button:hover {
+  background-color: #c9302c;
+}
+
+.user-booking .cancelled {
+  color: red;
+  font-weight: bold;
+}
+
+.user-booking .confirmed {
+  color: green;
+  font-weight: bold;
+}
